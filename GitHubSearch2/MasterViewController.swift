@@ -2,8 +2,6 @@
 //  MasterViewController.swift
 //  GitHubSearch2
 //
-//  Created by Suita Fujino on 2016/07/26.
-//  Copyright © 2016年 ARTE Co., Ltd. All rights reserved.
 //
 
 import UIKit
