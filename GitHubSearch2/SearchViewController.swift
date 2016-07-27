@@ -94,7 +94,7 @@ extension SearchViewController: UISearchControllerDelegate {
 }
 
 extension SearchViewController: UISearchBarDelegate {
-    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         guard let searchText = searchBar.text else { return }
         guard let searchManager = SearchRepositoriesManager(github: appContext.github, query: searchText) else { return }
         self.searchManager = searchManager

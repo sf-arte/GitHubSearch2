@@ -113,7 +113,8 @@ public class GitHubAPI {
 
         switch endpoint.method {
         case .Get:
-            HTTPSessionManager.get(endpoint.path, parameters: endpoint.parameters.dictionary, success: success, failure: failure)
+            HTTPSessionManager.get(endpoint.path, parameters: endpoint.parameters.dictionary, progress: nil,
+                                   success: success, failure: failure)
         }
     }
 

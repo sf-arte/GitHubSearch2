@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="-38" y="-630"/>
         </scene>
-        <!--View Controller-->
+        <!--Repository View Controller-->
         <scene sceneID="xQB-IJ-vQI">
             <objects>
-                <viewController id="25Y-hS-Y8F" sceneMemberID="viewController">
+                <viewController id="25Y-hS-Y8F" customClass="RepositoryViewController" customModule="GitHubSearch2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="65I-Ph-3mJ"/>
                         <viewControllerLayoutGuide type="bottom" id="l6T-tJ-UCD"/>
@@ -32,12 +32,33 @@
                     <view key="view" contentMode="scaleToFill" id="n13-vJ-Xaa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baq-TT-yFP">
+                                <frame key="frameInset" minX="72" minY="96" width="231" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlK-Dk-wbb">
+                                <frame key="frameInset" minX="110" minY="192" width="155" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="openURLWithSender:" destination="25Y-hS-Y8F" eventType="touchUpInside" id="ygc-ZH-r7L"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="URLButton" destination="YlK-Dk-wbb" id="QX3-qA-nQe"/>
+                        <outlet property="nameLabel" destination="baq-TT-yFP" id="p1V-f4-bw0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOH-n2-J6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="130"/>
+            <point key="canvasLocation" x="-39.200000000000003" y="129.98500749625188"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
