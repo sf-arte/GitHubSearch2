@@ -9,6 +9,9 @@ self.page += 1
 ```
 
 ##### 名称，文法の変更
+Xcodeがほぼ自動で修正してくれる．
+例:
+
 | Before | After |
 |:-------|:------|
 | ErrorType | ErrorProtocol |
